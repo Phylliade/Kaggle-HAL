@@ -1,10 +1,10 @@
-label_nn= ones(42000,10);
+label_nn= ones(sub_number,10);
 
-for i=1:42000
+for i=1:sub_number
 label_nn(i,:)=position2(label(i));
 end
 
-res_nn = transpose(ANN_MNIS(transpose(data_test)));
+res_nn = transpose(ANN_MNIST3(transpose(data_test)));
 
 res = ones(28000,2);
 for i=1:28000
